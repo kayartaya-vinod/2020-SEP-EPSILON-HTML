@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables demo</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .table-default {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-default th, 
+        .table-default td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-bordered td, 
+        .table-bordered th{
+            border: 1px solid #aaa;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tables demo</h1>
+
+    <hr>
+
+
+    <h3>Friends list</h3>
+
+    <table class="table-default table-bordered table-striped table-hover">
+        <thead>
+            <!-- tr table-row, contains one or more th or td -->
+            <tr>
+                <th rowspan="2">Sl no</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">City</th>
+                <th colspan="2">Contact details</th>
+            </tr>
+            <tr>
+                <th>Email address</th>
+                <th>Phone number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shyam Sundar</td>
+                <td>Shivamogga</td>
+                <td>shyam@example.com</td>
+                <td>9812398123</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Satya Narayana</td>
+                <td>Shivamogga</td>
+                <td>satya@xmpl.com</td>
+                <td>9871298712</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Robert</td>
+                <td>Dallas</td>
+                <td>robert@msn.com</td>
+                <td>9876198761</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mahesh</td>
+                <td>Pune</td>
+                <td>mahesh@yahoo.com</td>
+                <td>9876598765</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Harish</td>
+                <td>Bangalore</td>
+                <td>harish@yahoo.com</td>
+                <td>9872298765</td>
+            </tr>            
+            <tr>
+                <td>6</td>
+                <td>Rajesh</td>
+                <td>Bangalore</td>
+                <td>rajesh@yahoo.com</td>
+                <td>9876592265</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

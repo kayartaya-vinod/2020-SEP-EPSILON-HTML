@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with HTML Tables</title>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightseagreen;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+        td:last-child, 
+        #tbl2 td:nth-child(3), 
+        #tbl2 td:nth-child(4) {
+            text-align: right;
+        }
+
+        #tbl2 > tbody > tr:hover {
+            background-color: #ddd;
+        }
+
+        #tbl1 > tbody > tr:nth-child(even) {
+            background-color: #eee;
+        }
+        #tbl1 > tbody > tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <h1>Working with HTML Tables</h1>
+    <hr>
+
+    <table id="tbl1">
+        <thead>
+            <!-- tr table-row, contains one or more th or td -->
+            <tr>
+                <th rowspan="2">Sl no</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">City</th>
+                <th colspan="2">Contact details</th>
+            </tr>
+            <tr>
+                <th>Email address</th>
+                <th>Phone number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shyam Sundar</td>
+                <td>Shivamogga</td>
+                <td>shyam@example.com</td>
+                <td>9812398123</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Satya Narayana</td>
+                <td>Shivamogga</td>
+                <td>satya@xmpl.com</td>
+                <td>9871298712</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Robert</td>
+                <td>Dallas</td>
+                <td>robert@msn.com</td>
+                <td>9876198761</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mahesh</td>
+                <td>Pune</td>
+                <td>mahesh@yahoo.com</td>
+                <td>9876598765</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Harish</td>
+                <td>Bangalore</td>
+                <td>harish@yahoo.com</td>
+                <td>9872298765</td>
+            </tr>            
+            <tr>
+                <td>6</td>
+                <td>Rajesh</td>
+                <td>Bangalore</td>
+                <td>rajesh@yahoo.com</td>
+                <td>9876592265</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Order details:</h3>
+
+    <!-- table>((thead>(tr>th*5))+(tbody>(tr*3>td*5))) -->
+    <table id="tbl2">
+        <thead>
+            <tr>
+                <th>Sl no</th>
+                <th>Product description</th>
+                <th>Unit price</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Potato 1 kg</td>
+                <td>37.0</td>
+                <td>2</td>
+                <td>74.0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tomato Farm 2 kg pack</td>
+                <td>42.0</td>
+                <td>1</td>
+                <td>42.0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Onions organically grown</td>
+                <td>38.0</td>
+                <td>3</td>
+                <td>114.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="text-align: right;" colspan="3">Total</td>
+                <td style="text-align: right;">6</td>
+                <td>231.0</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+</html>
