@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap'); */
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+}
+
+.blueish {
+    color: darkblue;
+    background-color: lightskyblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.container {
+    width: 1000px;
+    padding: 25px;
+    margin: 0 auto;
+}
+/* 
+.container > h1 {
+    font-family: 'Ranchers', cursive;
+} 
+*/
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid rgba(109, 109, 197, .5);
+    padding: 10px;
+    width: 125px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.link:hover {
+    border: 2px solid darkblue;
+    background-color: lightblue;
+}
+
+.box {
+    min-height: 100vh;
+    padding-top: 180px; /* height of .blueish */
+}
