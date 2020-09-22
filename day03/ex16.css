@@ -49,3 +49,19 @@ body {
     min-height: 100vh;
     padding-top: 180px; /* height of .blueish */
 }
+
+.row {
+    padding: 10px;
+}
+
+.row > .col {
+    width: 50%;
+    float: left;
+}
+
+.col img {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    margin: 18px -10px;
+}
