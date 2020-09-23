@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with videos</title>
+
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .err {
+            color: #f00;
+            font-style: italic;
+        }
+
+        .container video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Working with videos</h1>
+        <hr>
+
+        <video loop onmouseenter="this.play()" onmouseout="this.pause()" controls poster="../images/splashing.jpg">
+            <source src="../videos/sea.mp4">
+            <source src="../videos/cliff.mp4">
+            <h3 class="err">Your browser doesn't support HTML5 videos</h3>
+        </video>
+
+        <video  loop onmouseenter="this.play()" onmouseout="this.pause()" 
+            src="../videos/cliff.mp4" muted>
+            <h3 class="err">Your browser doesn't support HTML5 videos</h3>
+        </video>
+
+        <!-- <audio src="../audio/myspeach.mp3" autoplay controls ></audio> -->
+
+    </div>
+
+</body>
+
+</html>
