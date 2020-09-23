@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap CSS Framework Demo</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <style>
+        #player {
+            width: 100%;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -24,7 +31,12 @@
             <div class="col alert alert-info">Four</div>
             <div class="col alert alert-secondary">Five</div>
         </div>
-    </div>
 
+        <div id="player" 
+            data-plyr-provider="youtube" data-plyr-embed-id="CtmdUiv_sxs"></div>
+    </div>
+    <script>
+        const player = new Plyr(document.getElementById('player'));
+    </script>
 </body>
 </html>

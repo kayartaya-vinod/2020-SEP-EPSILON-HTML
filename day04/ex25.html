@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+    <style>
+
+        #cooper {
+            width: 300px;
+            z-index: 100;
+            position: relative;
+        }
+
+        #bike {
+            position: absolute;
+            left: 220px;
+            top: 320px;
+            width: 250px;
+            z-index: 20;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Z-Index demo</h1>
+
+        <hr>
+
+        <img id="cooper" src="../images/cooper.jpeg" alt="cooper">
+        <img id="bike" src="../images/bike.jpeg" alt="bike">
+        <img id="aeroplane" src="../images/aeroplane.jpeg" alt="aeroplane">
+    </div>
+    
+</body>
+</html>

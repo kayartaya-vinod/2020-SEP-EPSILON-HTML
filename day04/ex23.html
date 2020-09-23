@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        input {
+            font-size: xx-large;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px dotted #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>HTML Forms Demo</h1>
+        <hr>
+
+        <div>
+            <p>Textbox: used for accepting a single line of plain text </p>
+            <input type="text" placeholder="Enter your name here" autofocus>
+        </div>
+        <div>
+            <p>Password box: used for accepting a masked single line of plain text </p>
+            <input type="password" placeholder="Secret code here" autofocus>
+        </div>
+        <div>
+            <p>Number box</p>
+            <input type="number" placeholder="Age" autofocus min="1">
+        </div>
+
+        <div>
+            <p>Radio buttons</p>
+            <p>Select gender: </p>
+            <label><input type="radio" name="gender" value="M"> Male</label>
+            <label><input type="radio" name="gender" value="F"> Female</label>
+            <label><input type="radio" name="gender" value="o"> LGBTQ</label>
+            
+            <p>Select one of the options below</p>
+            <input id="fvg" type="radio" name="foodtype" value="vg"> 
+            <label for="fvg">Vegetarian</label>
+
+            <input id="fnvg" type="radio" name="foodtype" value="nvg"> 
+            <label for="fnvg">Non vegetarian</label>
+        </div>
+
+        <div>
+            <p>Checkboxes (allow you to select multiple values for same option)</p>
+            <p>What kind of movies you genereally whatch?</p>
+            <div>
+                <label><input type="checkbox" name="genre" value="action"> Action</label>
+                <label><input type="checkbox" name="genre" value="adventure"> Adventure</label>
+                <label><input type="checkbox" name="genre" value="crime"> Crime</label>
+                <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                <label><input type="checkbox" name="genre" value="comedy"> Comedy</label>
+            </div>
+        </div>
+
+        <div>
+            <p>Dropdown / Listbox</p>
+            <p>Which part of the country you come from?</p>
+            <select name="zone">
+                <option value="0">--SELECT ONE--</option>
+                <option value="N">North</option>
+                <option value="S">South</option>
+                <option value="E">East</option>
+                <option value="W">West</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Text area (accepts multiline text)</p>
+            <textarea name="desc" 
+                style="min-width: 600px; max-width: 600px; min-height: 300px; max-height: 300px;" 
+                placeholder="About yourself..."></textarea>
+        </div>
+
+        <!-- following will not have any effect on computer browser, but will have
+        different effect on keypad of mobile devices -->
+        <div>
+            <p>Telephone box: used for accepting telephone number </p>
+            <input type="tel" placeholder="Your phone" autofocus>
+        </div>
+        <div>
+            <p><label for="eml">Email box</label></p>
+            <input id="eml" type="email" placeholder="Your email" autofocus>
+        </div>
+        <div>
+            <p><label for="dt">Date</label></p>
+            <input id="dt" type="date" placeholder="Date of birth" autofocus>
+        </div>
+        <div>
+            <p>Range</p>
+            <input style="width: 300px;" type="range" min="0" max="100" value="34">
+        </div>
+        <div>
+            <p>Progress</p>
+            <progress style="width: 300px;" min="0" max="100" value="88" >
+        </div>
+        
+    </div>
+</body>
+
+</html>
