@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Animation</title>
+
+    <style>
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        @keyframes flicker {
+            from { background-color: blue;}
+            to { background-color: green;}
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 5px;
+        }
+        #d1 {
+            background-color: blueviolet;
+        }
+        #d1:hover {
+            animation-name: flicker;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        #d2 {
+            background-color: brown;
+            animation-name: flicker;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0);}
+            25% {transform: translateX(-5px) rotate(-15deg);}
+            75% {transform: translateX(5px) rotate(15deg);}
+            100% {transform: translateX(0);}
+        }
+        #d3 {
+            background-color: crimson;
+        }
+        #d3:hover {
+            animation-name: shake;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Animation</h1>
+        <hr>
+
+        <div class="box" id="d1"></div>
+        <div class="box" id="d2"></div>
+        <div class="box" id="d3"></div>
+    </div>
+</body>
+</html>
